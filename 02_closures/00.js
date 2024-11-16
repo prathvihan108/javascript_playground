@@ -1,25 +1,30 @@
-//properties of the functions also part of  the closure.
-//note:properties of the function are diffferent than the variables.
-//properties are accessible outside of the funcion too using the funcion name.
-function x() {
-    x.a = 10;//property of the fucntion(originally functions are the objects)
-    var a =10;
-    function c() {
-        console.log(x.a);
-    }
+//behaviour of the let when used with the setTimeout
+function a(){
     
-
-    console.log(x.a); 
-
-    return c;
+    for(let i=1;i<=5;i++){//new instance of i  is created every iteration
+        
+        setTimeout(function(){
+            console.log(i); // 1 2 3 4 5 
+        
+        },i*1000);
+        
+    }
 }
-console.log(a);//u can not access the var outside the funcion like properties of function.
-console.log(x.a); //undefined(x.a is initially hold undefined)
-var y=x();//x.a is initialised since we call the function.
-console.log(x.a); //10
-
-y();// c remembers x.a 
+a();
 
 
+//---var--
+console.log("--var--")
 
-
+function b(){
+    
+    for(var i=1;i<=5;i++){//same reference of i  is shared every iteration
+        
+        setTimeout(function(){
+            console.log(i); // 1 2 3 4 5 
+        
+        },i*1000);
+        
+    }
+}
+b();
