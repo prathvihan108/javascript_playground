@@ -1,30 +1,12 @@
-//behaviour of the let when used with the setTimeout
-function a(){
-    
-    for(let i=1;i<=5;i++){//new instance of i  is created every iteration
-        
-        setTimeout(function(){
-            console.log(i); // 1 2 3 4 5 
-        
-        },i*1000);
-        
-    }
+var sum = function(a,b){
+    console.log(a+b);
+
 }
-a();
 
-
-//---var--
-console.log("--var--")
-
-function b(){
-    
-    for(var i=1;i<=5;i++){//same reference of i  is shared every iteration
-        
-        setTimeout(function(){
-            console.log(i); // 1 2 3 4 5 
-        
-        },i*1000);
-        
-    }
+function calculate(callback){
+    var a =10;
+    var b= 12;
+    callback(10,12);
 }
-b();
+
+calculate(sum);
