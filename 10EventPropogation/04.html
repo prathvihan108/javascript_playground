@@ -1,0 +1,44 @@
+<!-- 3. Global Behavior Handling
+
+Use Case: Add global behaviors to multiple elements by listening at a higher level.
+Example: Implementing a click-to-close behavior for modals or dropdowns. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+   #modal {
+    display: block;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Optional for background styling */
+    color: white; /* Optional for text color */
+    z-index: 1000; /* Ensures it's above other elements */
+}
+
+    </style>
+</head>
+<body>
+    <div id="modal">Modal Content
+        <iframe 
+    src="https://www.youtube.com/embed/aVSf0b1jVKk?si=XBhVZjPPHsyvNbhb" 
+    frameborder="0" 
+    width="100%" 
+    height="100%" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+    </div>
+    <script src="04.js">
+    
+    </script>
+    
+</body>
+</html>

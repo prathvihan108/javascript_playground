@@ -1,0 +1,35 @@
+<!-- //Event delegation example -->
+<!-- 
+//adding the custom behaviours -->
+<!-- data-*  is the dataset attribute present for all the html elements  -->
+<!-- here we are using the data-uppercase -->
+<!-- during the event object hirerchy we only get this as the 'uppercase' 'data-' is ignored -->
+<!-- 
+1. dataset and DOMStringMap:
+
+    Every HTML element has a dataset property that allows access to all its data-* attributes in JavaScript.
+    The dataset is an instance of the DOMStringMap object, where:
+        Each data-* attribute becomes a key in DOMStringMap without the data- prefix.
+        The key follows camelCase naming if the attribute has a hyphen. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uppercase Input</title>
+</head>
+<body>
+    <form id="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" data-uppercase>
+       
+        <input type="text" id="name" >
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="05.js">
+   
+    </script>
+</body>
+</html>
