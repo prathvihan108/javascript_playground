@@ -1,0 +1,28 @@
+<!-- textContent vs innerText -->
+<!-- This demonstrates the difference between textContent and innerText:
+
+textContent includes all text inside the element, even if it’s hidden.
+
+>>innerText only includes the text that is visible to the user.
+>>both properties restrive/set the whole text of the all childen when used(not only first child). -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TextContent vs InnerText</title>
+	</head>
+	<body>
+		<!-- A div element containing some text and a hidden span -->
+		<div id="example">
+			<p>Hello <span style="display: none">World</span></p>
+		</div>
+
+		<!-- Button to trigger the JavaScript function -->
+		<button id="checkText">Check TextContent vs InnerText</button>
+
+		<!-- Link to the external JavaScript file -->
+		<script src="02.js"></script>
+	</body>
+</html>

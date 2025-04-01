@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DOM Selection Methods</title>
+	</head>
+	<body>
+		<h1>DOM Element Selection Methods</h1>
+
+		<!-- 1. Using getElementById -->
+		<div id="elementById">Element selected by getElementById</div>
+		<button id="getByIdButton">Change Text with getElementById</button>
+
+		<!-- 2. Using getElementsByClassName -->
+		<div class="myClass">Element 1 with class myClass</div>
+		<div class="myClass">Element 2 with class myClass</div>
+		<div class="myClass">Element 3 with class myClass</div>
+		<button id="getByClassButton">Change Text of Class Elements</button>
+
+		<!-- 3. Using getElementsByTagName -->
+		<p>Paragraph 1</p>
+		<p>Paragraph 2</p>
+		<p>Paragraph 3</p>
+		<button id="getByTagButton">Change Text of Paragraphs</button>
+
+		<!-- 4. Using querySelector -->
+		<div class="container">
+			<span class="child">Child 1</span>
+			<span class="child">Child 2</span>
+		</div>
+		<button id="getQuerySelectorButton">Change Text of Child</button>
+
+		<!-- 5. Using querySelectorAll -->
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+		<button id="getQuerySelectorAllButton">Change Text of All Items</button>
+	</body>
+</html>
